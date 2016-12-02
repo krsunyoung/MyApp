@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); //importclass 로 추가 따로 만들었으므로
+        setContentView(R.layout.activity_main); //importclass 로 추가 따로 만들었으므로 임플레이션(imflation)
 
         indexTab = MainTabsConfig.TABINDEX.FIRST;
 

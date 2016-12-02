@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bit2016.myapp">
+<!--네트워크 사용하는것을 알려주는것-->
+    <uses-permission android:name="android.permission.INTERNET" />
 
+
+    <!-- application 에 이름을 줌으로써 각각의 activity 마다 설정해 줄수 있다. id랑 같은 역할?-->
     <!-- thmem styles_svdarkblue에 있는 theme 변경-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Svdarkblue">
+        android:theme="@style/Theme.Svdarkblue"
+        android:name=".core.MyAppApplication">
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

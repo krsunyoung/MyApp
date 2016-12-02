@@ -3,14 +3,15 @@ package com.bit2016.myapp.ui;
 import android.os.Bundle;
 
 import com.bit2016.myapp.R;
-import com.bit2016.myapp.ui.tabs.Tab1Fragment;
 import com.bit2016.myapp.ui.tabs.Tab2Fragment;
 import com.bit2016.myapp.ui.tabs.Tab3Fragment;
+import com.bit2016.myapp.ui.User.UserListFragment;
 
 public final class MainTabsConfig {
 
     private static final TabInfo[] TABINFOS = {
-       new TabInfo( "탭1", R.drawable.ic_online, R.drawable.ic_online_selected, Tab1Fragment.class, null ),
+       //new TabInfo( "탭1", R.drawable.ic_online, R.drawable.ic_online_selected, Tab1Fragment.class, null ),
+       new TabInfo( "사용자", R.drawable.ic_online, R.drawable.ic_online_selected, UserListFragment.class, null ),
        new TabInfo( "탭2", R.drawable.ic_chat, R.drawable.ic_chat_selected, Tab2Fragment.class, null ),
        new TabInfo( "탭3", R.drawable.ic_more, R.drawable.ic_more_selected, Tab3Fragment.class, null )
     };
